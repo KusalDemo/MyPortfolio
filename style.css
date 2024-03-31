@@ -140,7 +140,7 @@ nav img {
 }
 /*About Me Section Styles*/
 #about {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     color: white;
     background-color: #000000;
@@ -148,49 +148,40 @@ nav img {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 20px;
 }
-
 #about-me {
-    /*border: 1px solid red;*/
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 15px;
     background-color: #212124;
-
-    position: relative;
-    top: 75px;
+    width: 80%;
+    max-width: 800px;
 }
 
 .about-container-gallery-targets {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
 
 .about-container-gallery-targets > div {
     border-radius: 15px;
     background-color: #212124;
-}
-
-@media (max-width: 1024px) {
-    .about-container-gallery-targets {
-        flex-direction: column;
-        align-items: center;
-    }
+    width: 45%;
+    margin: 0 2.5%;
 }
 
 #gallery {
     position: relative;
-    top: 112px;
-    left: 16px;
 }
 
 #gallery > img {
-    width: 500px;
-    height: 350px;
-
+    width: 100%;
+    height: auto;
 }
 
 #gallery > h3 {
@@ -207,33 +198,30 @@ nav img {
 #targets {
     list-style-type: none;
     padding: 10px;
+}
 
-    position: relative;
-    top: 112px;
-    left: -26px;
+#targets > img {
+    width: 100%;
+    height: auto;
 }
-#targets>img{
-    position: relative;
-    left: 35px;
-    top: 42px;
-}
-#targets>button{
-    width: 150px;
+
+#targets > button {
+    width: 100%;
     height: 35px;
-
-    position: relative;
-    left: 38px;
-    top: 35px;
-
     background-color: blue;
     color: white;
     border-radius: 15px;
     border-color: blue;
+    margin-top: 20px;
 }
+
 .about-container > div {
     margin-bottom: 20px;
 }
+
 .about-container > div:last-child {
     margin-bottom: 0;
 }
+
+
 
