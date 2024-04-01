@@ -3,15 +3,21 @@
     font-weight: 500;
     font-style: normal;
 }
+
 body {
     height: 100%;
     margin: 0;
     display: flex;
+    flex-direction: column;
 }
-section{
-    width: 100vw;
+
+section {
+    width: 100%;
     height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 nav {
     margin: 0;
     padding: 0;
@@ -25,7 +31,6 @@ nav {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-
     position: sticky;
     top: 0;
     left: 0;
@@ -56,15 +61,16 @@ nav a {
 .nav-links a:hover {
     background-color: black;
     color: white;
-    border-radius: 15px ;
+    border-radius: 15px;
 }
+
 .social-icons a {
     transition: transform 0.3s ease;
 }
+
 .social-icons a:hover {
     transform: scale(1.5);
 }
-
 
 nav img {
     width: 30px;
@@ -74,22 +80,17 @@ nav img {
 
 @media screen and (max-width: 600px) {
     nav {
-        flex-direction: column;
-    }
-    .nav-links, .social-icons {
-        width: 100%;
-        justify-content: space-between;
-    }
-    nav a {
-        margin: 10px 0;
+        display: none;
     }
 }
-#home{
+
+#home {
     background: linear-gradient(-45deg, #f0f0f0, #c0c0c0, #ffffff, #d3d3d3);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -101,55 +102,72 @@ nav img {
         background-position: 0% 50%;
     }
 }
-#home>picture{
+
+#home > picture {
     position: absolute;
     left: 0;
     bottom: 0;
 }
-#home>div{
-    position: absolute;
 
+#home > div {
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#home>div>img{
+
+#home > div > img {
     width: 100px;
     height: 100px;
 }
-#home>div>h1{
+
+#home > div > h1 {
     font-size: 8rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-
     margin: 0;
 }
-#home>div>h3{
+
+#home > div > h3 {
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
-/*About Me Section Styles*/
+
+@media screen and (max-width: 600px) {
+    #home > div > h1 {
+        font-size: 4rem;
+    }
+    #home > div > h3 {
+        font-size: 1.5rem;
+    }
+    #home > div > img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* About Me Section Styles */
 #about {
+    width: 100%;
     height: auto;
-    width: 100vw;
     color: white;
     background-color: #000000;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 20px;
+    padding: 40px 0 40px 0;
 }
+
 #about-me {
     margin: 0 auto 20px auto;
     padding: 20px;
@@ -183,6 +201,10 @@ nav img {
     .about-container-gallery-targets > div {
         width: 100%;
         margin: 0 auto 20px auto;
+    }
+    #targets > img {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -233,19 +255,26 @@ nav img {
 .about-container > div:last-child {
     margin-bottom: 0;
 }
+
+/* Animation */
+.about-container-gallery-targets > div:hover {
+    transform: scale(0.99);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Education Section Styles */
 #education {
     width: 100%;
-    padding: 20px;
+    height: auto;
     background-color: #f5f5f5;
     font-family: "Poppins", sans-serif;
     color: #333;
-
 }
 
-.logo-and-details{
+.logo-and-details {
     display: flex;
 }
+
 #education h3 {
     text-align: center;
     margin-bottom: 20px;
@@ -263,11 +292,15 @@ nav img {
     width: 40%;
 }
 
+#education > div:hover {
+    transform: scale(0.99);
+    transition: transform 0.3s ease-in-out;
+}
+
 #education img {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
-
     position: relative;
     left: 0;
 }
@@ -295,6 +328,39 @@ nav img {
         flex-direction: column;
         align-items: center;
     }
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#skills>div{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    background-color: #212124;
+    border-radius: 15px;
+}
+@media (min-width: 768px) {
+    #skills>div {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+}
+#skills>div>div>div{
+    padding: 20px 80px 20px 20px;
 }
 
 
