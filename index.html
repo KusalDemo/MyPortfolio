@@ -15,13 +15,14 @@
     <main>
         <section id="home">
             <picture>
-                <source media="(min-width: 1000px)" srcset="assets/images/home-image.png" >
-                <img src="assets/images/home-image.png" title="home image" alt="home image">
+                <img src="assets/images/home-image.png" title="home image" alt="home image" style="width: 100%; max-width: 300px;">
+                <!--<source media="(min-width: 1000px)" srcset="assets/images/home-image.png" >
+                <img src="assets/images/home-image.png" title="home image" alt="home image">-->
             </picture>
             <div>
-                <img src="assets/icons/icons8-king-64.png" title="king" alt="king">
+                <img src="assets/icons/icons8-king-64.png" id="kusal-logo" title="king" alt="king">
                 <h1>KUSAL GUNASEKARA</h1>
-                <h3>KusalJS</h3>
+                <h3 id="kusal-short">KusalJS</h3>
             </div>
         </section>
         <nav>
@@ -68,8 +69,9 @@
                     <div id="gallery">
                         <h3>Gallery</h3>
                         <picture>
-                            <source media="(min-width: 1000px)" srcset="assets/images/gallery-image.jpeg" >
-                            <img src="assets/images/gallery-image.jpeg" width="350" height="240" title="gallery image" alt="gallery image">
+                            <img src="assets/images/gallery-image.jpeg" title="gallery image" alt="gallery image"style="width: 100%; max-width: 300px;">
+                            <!--<source media="(min-width: 1000px)" srcset="assets/images/gallery-image.jpeg" >
+                            <img src="assets/images/gallery-image.jpeg" width="350" height="240" title="gallery image" alt="gallery image">-->
                         </picture>
                     </div>
                     <div id="targets">
@@ -447,32 +449,27 @@
         </section>
         <section id="contact">
             <h4>Technologies</h4>
-            <div>
-                <div>
-                    <img src="assets/icons/icons8-java-100.png" title="Java" alt="Java">
-                    <img src="assets/icons/icons8-python-100.png " title="Python" alt="Python">
-                    <img src="assets/icons/icons8-git-100.png" title="Github" alt="Github">
-                    <img src="assets/icons/icons8-intellij-idea-100.png" title="Intellij" alt="Intellij">
-                    <img src="assets/icons/icons8-mysql-100.png" title="MySQL" alt="MySQL">
-                    <img src="assets/icons/icons8-figma-100.png" title="Figma" alt="Figma">
-                    <img src="assets/icons/icons8-html-64.png" title="HTML" alt="HTML">
-                    <img src="assets/icons/icons8-css-100.png" title="CSS" alt="CSS">
-                    <img src="assets/icons/icons8-linux-100.png" title="Linux" alt="Linux">
-                </div>
-                <div>
+            <div class="box-contact">
+                <img src="assets/icons/icons8-java-100.png" title="Java" alt="Java">
+                <img src="assets/icons/icons8-python-100.png " title="Python" alt="Python">
+                <img src="assets/icons/icons8-git-100.png" title="Github" alt="Github">
+                <img src="assets/icons/icons8-intellij-idea-100.png" title="Intellij" alt="Intellij">
+                <img src="assets/icons/icons8-mysql-100.png" title="MySQL" alt="MySQL">
+                <img src="assets/icons/icons8-figma-100.png" title="Figma" alt="Figma">
+                <img src="assets/icons/icons8-html-64.png" title="HTML" alt="HTML">
+                <img src="assets/icons/icons8-css-100.png" title="CSS" alt="CSS">
+                <img src="assets/icons/icons8-linux-100.png" title="Linux" alt="Linux">
+            </div>
                     <h4>Kusal Gunasekara</h4>
                     <p>Empowering innovation and creativity, one line of code at a time. Together, let's build a bright.er digital future.</p>
                     <p> © kusalJS/2024</p>
 
                     <h4>Brief Me Now</h4>
-                    <img src="assets/icons/icons8-mail-100.png" title="Email" alt="Email">
+                    <img src="assets/icons/icons8-mail-100.png" title="Email" alt="Email"><br>
                     <a href="https://mail.google.com/mail/u/0/#inbox">kusalgunasekara2002@gmail.com</a>
-                </div>
+
             </div>
         </section>
     </main>
-    <!--<footer>
-        <p>© kusalJS/2024</p>
-    </footer>-->
 </body>
 </html>

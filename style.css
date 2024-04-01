@@ -79,7 +79,21 @@ nav img {
 }
 
 @media screen and (max-width: 600px) {
+    #kusal-logo{
+        position: absolute;
+        top: 20%;
+    }
+    #kusal-short{
+        position: absolute;
+        top: 26%;
+    }
+    p ,li{
+        font-size: 13px;
+    }
     nav {
+        display: none;
+    }
+    h1{
         display: none;
     }
 }
@@ -485,4 +499,23 @@ nav img {
 }
 #blog>div>a:hover{
     color: blue;
+}
+
+/*Contact Section*/
+#contact{
+    height: auto;
+    padding: 70px 9%;
+    font-family: "Poppins", sans-serif;
+}
+.box-container-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    gap: 15px;
+}
+.box-container-contact>div{
+    padding: 20px;
+    text-align: center;
+}
+#contact>a:hover{
+    color: black;
 }
