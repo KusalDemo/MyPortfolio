@@ -99,9 +99,9 @@ nav img {
 }
 
 #home {
-    background: linear-gradient(-45deg, #f0f0f0, #c0c0c0, #ffffff, #d3d3d3);
+    /*background: linear-gradient(-45deg, #f0f0f0, #c0c0c0, #ffffff, #d3d3d3);
+    animation: gradient 15s ease infinite;*/
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
     height: 100vh;
 }
 
@@ -292,6 +292,23 @@ nav img {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
 }
+.box-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    border: 1px solid red;
+    padding: 10px;
+}
+.sub-box-skills {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
+.sub-box-skills img {
+    width: 100%;
+    height: auto;
+}
+
 
 /*certificate section*/
 #certifications{
