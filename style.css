@@ -167,6 +167,7 @@ nav img {
         width: 70px;
         height: 70px;
     }
+
 }
 
 /* About Me Section Styles */
@@ -294,19 +295,29 @@ nav img {
 }
 .box-skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    border: 1px solid red;
-    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0;
+    padding: 0;
 }
 .sub-box-skills {
-    border: 1px solid red;
     padding: 10px;
     text-align: center;
 }
 .sub-box-skills img {
-    width: 100%;
+    width: 100px;
     height: auto;
+}
+@media screen and (max-width: 1560px){
+    .box-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        padding: 0;
+    }
+    .sub-box-skills img {
+        width: 50px;
+        height: auto;
+    }
 }
 
 
@@ -322,8 +333,8 @@ nav img {
 }
 .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
 }
 .box-container>div{
     background: #fff;
@@ -331,6 +342,11 @@ nav img {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.box>img:hover{
+    transform: scale(1.30);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .box-container>div:hover{
     transform: scale(0.99);
@@ -440,4 +456,44 @@ nav img {
 }*/
 #contact>a:hover{
     color: black;
+}
+
+/* marquee effect */
+.marquee{
+    display: inline-block;
+    padding-left: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+.marquee-top{
+    animation: marquee-top 40s linear infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    color: black;
+    font-size: 150px;
+}
+.marquee-bottom{
+    animation: marquee-bottom 40s linear infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    color: gray;
+    font-size: 130px;
+}
+
+@keyframes marquee-top {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-bottom {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
