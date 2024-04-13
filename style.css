@@ -5,13 +5,16 @@
     --lightgray-color: #f0f0f0;
     --dark-box-color: #212124;
     --font-family-default: "Poppins", sans-serif;
+    --boader-radius:15px;
 }
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
+/*======================================================*/
 
+/*Common Styles*/
 body {
     height: 100%;
     margin: 0;
@@ -20,7 +23,16 @@ body {
     background: url("assets/images/greek-wallpaper.jpg") fixed center;
     backdrop-filter: blur(5px);
 }
-
+.box>img:hover{
+    transform: scale(1.30);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.box-container>div:hover{
+    transform: scale(0.99);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 section {
     width: 100%;
     height: 100vh;
@@ -28,10 +40,11 @@ section {
     box-sizing: border-box;
 }
 
+/*======================================================*/
 nav {
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    background-color: white;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -88,14 +101,6 @@ nav img {
     margin-right: 10px;
 }
 @media screen and (max-width: 600px) {
-    #kusal-logo{
-        position: absolute;
-        top: 20%;
-    }
-    #kusal-short{
-        position: absolute;
-        top: 26%;
-    }
     p ,li ,a{
         font-size: 13px;
     }
@@ -109,61 +114,29 @@ nav img {
 
     }
 }
+
+/*Home Section*/
 .box-container-hero{
-    display: grid;
-    /*grid-template-rows: repeat(auto-fit, minmax(1000px, 1fr));*/
-    gap: 15px;
-}
-/*#home {
-    height: 100vh;
     position: relative;
-}
-#home > picture {
-    position: absolute;
-}
-#home > div {
-    position: absolute;
-    top:0;
-    bottom:0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: 100px;
+    display: grid;
+    gap: 15px;
 }
 
-#home > div > img {
-    width: 100px;
-    height: 100px;
-}
-
-#home > div > h1 {
-    font-size: 8rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0;
-}
-
-#home > div > h3 {
-    font-size: 2rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}*/
 .box-container-hero{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
     gap: 15px;
-
     align-items: center;
 }
 .box-hero{
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     justify-items: center;
+    padding: 20px;
 }
 .box-hero>h1{
     font-style: var(--font-family-default);
-    font-weight: bold;
+    font-family: "Poppins", sans-serif;
     font-size: 100px;
 }
 .toggle-button{
@@ -189,6 +162,7 @@ nav img {
         height: 70px;
     }
 
+
 }
 
 /* About Me Section Styles */
@@ -207,7 +181,6 @@ nav img {
     padding: 20px;
     border-radius: 15px;
     width: 80%;
-    max-width: 800px;
 }
 
 .about-container-gallery-targets {
@@ -220,12 +193,10 @@ nav img {
 }
 
 .about-container-gallery-targets > div {
-    border-radius: 15px;
-    width: 45%;
-    margin: 0 2.5%;
+    width: 60%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
     .about-container-gallery-targets {
         flex-direction: column;
         align-items: center;
@@ -238,41 +209,32 @@ nav img {
         width: 80px;
         height: 80px;
     }
+    nav{
+        display: none;
+    }
 }
 #targets {
     list-style-type: none;
     padding: 10px;
 }
-
 #targets > img {
     width: 100%;
     height: auto;
 }
-
 #targets > button {
     width: 100%;
     height: 35px;
     background-color: blue;
-    color: var(--primary-color);
+    color: white;
     border-radius: 15px;
     border-color: blue;
     margin-top: 20px;
 }
-
 .about-container > div {
     margin-bottom: 20px;
 }
 
-.about-container > div:last-child {
-    margin-bottom: 0;
-}
-
-/* Animation */
-.about-container-gallery-targets > div:hover {
-    transform: scale(0.99);
-    transition: transform 0.3s ease-in-out;
-}
-
+/*Education Section*/
 #education{
     height: auto;
     padding: 100px 9%;
@@ -288,12 +250,13 @@ nav img {
     background-color: var(--primary-color);
     text-align: center;
     justify-items: center;
+    border-radius: var(--boader-radius);
 }
 
+/*Skills*/
 #skills{
     height: auto;
     padding: 70px 9%;
-   /* padding-bottom: 50px;*/
     font-family: "Poppins", sans-serif;
 }
 #skills .box-container-skills{
@@ -307,6 +270,7 @@ nav img {
     grid-gap: 0;
     padding: 0;
     background-color: var(--primary-color);
+    border-radius: var(--boader-radius);
 }
 .sub-box-skills {
     padding: 10px;
@@ -328,7 +292,6 @@ nav img {
         height: auto;
     }
 }
-
 
 /*certificate section*/
 #certifications{
@@ -352,22 +315,11 @@ nav img {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.box>img:hover{
-    transform: scale(1.30);
-    transition: transform 0.3s ease-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-.box-container>div:hover{
-    transform: scale(0.99);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-/*assignment section*/
 
+/*assignment section*/
 #assignments{
     height: auto;
     padding: 70px 9%;
-    padding-bottom: 10%;
     font-family: "Poppins", sans-serif;
 }
 .box-container-assignments{
@@ -393,7 +345,7 @@ nav img {
 }
 .box-container-projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
 }
 .box-container-projects>div{
@@ -411,7 +363,7 @@ nav img {
 }
 .box-container-blogs{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
 }
 .box-container-blogs>div{
@@ -436,15 +388,11 @@ nav img {
 
 /*Contact Section*/
 #contact{
-    background: url("assets/images/greek-wallpaper.jpg");
-    height: auto;
-    margin: 0;
     padding: 70px 9%;
     font-family: "Poppins", sans-serif;
-
     justify-content: center;
-
-    background-color: #dcdde1;
+    background: url("assets/images/greek-wallpaper.jpg");
+    height: auto;
 }
 #contact>a:hover{
     color: var(--secondary-color);
