@@ -114,7 +114,7 @@ nav img {
     /*grid-template-rows: repeat(auto-fit, minmax(1000px, 1fr));*/
     gap: 15px;
 }
-#home {
+/*#home {
     height: 100vh;
     position: relative;
 }
@@ -148,6 +148,23 @@ nav img {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+}*/
+.box-container-hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    gap: 15px;
+
+    align-items: center;
+}
+.box-hero{
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-items: center;
+}
+.box-hero>h1{
+    font-style: var(--font-family-default);
+    font-weight: bold;
+    font-size: 100px;
 }
 .toggle-button{
     position: fixed;
