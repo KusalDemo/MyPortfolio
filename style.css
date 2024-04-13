@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --darkgray-color: #333;
+    --lightgray-color: #f0f0f0;
+    --dark-box-color: #212124;
+    --font-family-default: "Poppins", sans-serif;
+}
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -9,6 +17,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    /*background: url("assets/images/greek-wallpaper.jpg");*/
 }
 
 section {
@@ -21,7 +30,7 @@ section {
 nav {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--primary-color);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -50,7 +59,7 @@ nav {
 }
 
 nav a {
-    color: #333;
+    color: var(--darkgray-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,8 +68,8 @@ nav a {
 }
 
 .nav-links a:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 15px;
 }
 
@@ -77,7 +86,6 @@ nav img {
     height: 30px;
     margin-right: 10px;
 }
-
 @media screen and (max-width: 600px) {
     #kusal-logo{
         position: absolute;
@@ -95,6 +103,9 @@ nav img {
     }
     h1{
         display: none;
+    }
+    .toggle-button{
+
     }
 }
 
@@ -155,6 +166,16 @@ nav img {
     font-weight: 500;
     font-style: normal;
 }
+.toggle-button{
+    position: fixed;
+    right: -4%;
+    top: 20px;
+
+    width: 100px;
+    aspect-ratio: 1/1;
+    z-index: 5;
+}
+
 
 @media screen and (max-width: 600px) {
     #home > div > h1 {
@@ -174,8 +195,8 @@ nav img {
 #about {
     width: 100%;
     height: auto;
-    color: white;
-    background-color: #000000;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -187,7 +208,7 @@ nav img {
     margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 15px;
-    background-color: #212124;
+    background-color: var(--dark-box-color);
     width: 80%;
     max-width: 800px;
 }
@@ -257,7 +278,7 @@ nav img {
     width: 100%;
     height: 35px;
     background-color: blue;
-    color: white;
+    color: var(--primary-color);
     border-radius: 15px;
     border-color: blue;
     margin-top: 20px;
@@ -337,7 +358,7 @@ nav img {
     gap: 25px;
 }
 .box-container>div{
-    background: #fff;
+    background: var(--primary-color);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -361,8 +382,8 @@ nav img {
     padding-bottom: 10%;
     font-family: "Poppins", sans-serif;
 
-    background-color: black;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .box-container-assignments{
     display: grid;
@@ -370,16 +391,16 @@ nav img {
     gap: 15px;
 }
 .box-container-assignments>div{
-    background: #fff;
+    background:var(--primary-color);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
-    background-color: #212124;
+    background-color: var(--dark-box-color);
 }
 .box-container-assignments>div>a{
-    color: white;
+    color: var(--primary-color);
 }
 /*Project section*/
 #projects{
@@ -387,8 +408,8 @@ nav img {
     padding: 70px 9%;
     font-family: "Poppins", sans-serif;
 
-    background-color: black;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 .box-container-projects{
     display: grid;
@@ -396,13 +417,13 @@ nav img {
     gap: 15px;
 }
 .box-container-projects>div{
-    background: #fff;
+    background:var(--primary-color);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
-    background-color: #212124;
+    background-color: var(--dark-box-color);
 }
 /*
 .box-container-assignments>div>a{
@@ -421,14 +442,14 @@ nav img {
     gap: 15px;
 }
 .box-container-blog>div{
-    background: #fff;
+    background: var(--primary-color);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 #blog>div>a{
-    color: black;
+    color: var(--secondary-color);
 }
 #blog>div>a:hover{
     color: blue;
@@ -436,6 +457,8 @@ nav img {
 
 /*Contact Section*/
 #contact{
+    background: url("assets/images/greek-wallpaper.jpg");
+    /*background-position: center;*/
     height: auto;
     margin: 0;
     padding: 70px 9%;
@@ -455,7 +478,7 @@ nav img {
     text-align: center;
 }*/
 #contact>a:hover{
-    color: black;
+    color: var(--secondary-color);
 }
 
 /* marquee effect */
@@ -469,14 +492,14 @@ nav img {
     animation: marquee-top 40s linear infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    color: black;
+    color: var(--secondary-color);
     font-size: 150px;
 }
 .marquee-bottom{
     animation: marquee-bottom 40s linear infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    color: gray;
+    color: var(--darkgray-color);
     font-size: 130px;
 }
 
