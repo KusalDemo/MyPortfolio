@@ -413,14 +413,16 @@ section {
     animation: marquee-top 40s linear infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    color: var(--secondary-color);
+    /*color: var(--secondary-color);*/
+    color: white;
     font-size: 150px;
 }
 .marquee-bottom{
     animation: marquee-bottom 40s linear infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    color: var(--darkgray-color);
+    /*color: var(--darkgray-color);*/
+    color: #95a5a6;
     font-size: 130px;
 }
 
