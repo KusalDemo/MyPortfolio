@@ -12,3 +12,11 @@ const observer=new IntersectionObserver((entries)=>{
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1)=>observer.observe(e1));
 
+function toggleMobileMenu() {
+    var x = document.getElementById("navigation-bar");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}

@@ -8,15 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
+        <!--<div class="toggle-button" onclick="toggleMobileMenu(this)">
+            <i class="fa-solid fa-bars menu-btn active fa-xl"></i>
+        </div>-->
+
+
+        <!--<div id="toggle" class="nav-links-small-container">
+            <div class="box-nav-links">
+                <a href="#about">About</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#education">education</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#skills">skills</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#assignments">Assignments</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#blog">Blog</a>
+            </div>
+            <div class="box-nav-links">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>-->
     </header>
+    <div class="navigation" id="navigation-bar">
+        <!--<img src="assets/icons/icons8-king-64.png" style="width: 40px; height: 40px; margin: 8px" alt="KUSAL_GUNASEKARA">-->
+        <a href="#about" class="active">KusalJS</a>
+        <a href="#about">about</a>
+        <a href="#education">education</a>
+        <a href="#skills">skills</a>
+        <a href="#assignments">assignments</a>
+        <a href="#projects">projects</a>
+        <a href="#blog">blog</a>
+        <a href="#contact">contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <main>
         <section id="home">
             <div class="box-container-hero">
                 <div class="box box-hero">
-                        <img src="assets/images/kusalJS-profile.jpeg" title="home image" alt="Kusal_JayaShri_Gunasekara" style="max-width: 400px; border-radius: 100%;">
+                    <div></div>
                 </div>
                 <div class="box box-hero">
                     <h1>KUSAL GUNASEKARA</h1>
@@ -24,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <nav>
+        <!--<nav>
             <div class="nav-links">
                 <a href="https://mail.google.com">kusalgunasekara2002@gmail.com</a>
                 <a href="#about">About</a>
@@ -41,10 +85,7 @@
                 <a href="https://www.facebook.com/kusal.gunasekara.3"><img src="assets/icons/icons8-facebook-50.png" title="Facebook" alt="Facebook"></a>
                 <a href="https://medium.com/@kusalgunasekara2002"><img src="assets/icons/icons8-medium-50.png" title="Medium" alt="Medium"></a>
             </div>
-        </nav>
-        <div class="toggle-button">
-            <i class="fa-solid fa-bars fa-xl"></i>
-        </div>
+        </nav>-->
         <div class="dropdown-menu"></div>
         <div class="marquee-container">
             <div class="marquee marquee-top">KUSAL_GUNASEKARA✨️KUSAL_GUNASEKARA</div>
@@ -167,13 +208,13 @@
                         <img src="assets/icons/javascript.png" title="JavaScript" alt="JavaScript">
                     </div>
                     <div class="sub-box sub-box-skills">
+                        <img src="assets/icons/python.png" title="Python" alt="Python">
+                    </div>
+                    <div class="sub-box sub-box-skills">
                         <img src="assets/icons/angularjs.png" title="Angular" alt="Angular">
                     </div>
                     <div class="sub-box sub-box-skills">
                         <img src="assets/icons/react.png" title="React" alt="React">
-                    </div>
-                    <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/bootstrap-framework-logo.png" title="Bootstrap" alt="Bootstrap">
                     </div>
                     <div class="sub-box sub-box-skills">
                         <img src="assets/icons/html.png" title="HTML" alt="HTML">
@@ -182,22 +223,22 @@
                         <img src="assets/icons/css.png" title="CSS" alt="CSS">
                     </div>
                     <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/nodejs.png" title="NodeJs" alt="NodeJs">
+                        <img src="assets/icons/mysql.png" title="MySQL" alt="MySQL">
                     </div>
                     <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
+                        <img src="assets/icons/nodejs.png" title="NodeJs" alt="NodeJs">
                     </div>
                     <div class="sub-box sub-box-skills">
                         <img src="assets/icons/jquery.png" title="jQuery" alt="jQuery">
                     </div>
                     <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/java.png" title="Java" alt="Java">
+                        <img src="assets/icons/bootstrap-framework-logo.png" title="Bootstrap" alt="Bootstrap">
                     </div>
                     <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/java.png" title="Java" alt="Java">
+                        <img src="assets/icons/github.png" title="GitHub" alt="GitHub">
                     </div>
                     <div class="sub-box sub-box-skills">
-                        <img src="assets/icons/java.png" title="Java" alt="Java">
+                        <img src="assets/icons/figma.png" title="Figma" alt="Figma">
                     </div>
                     <div class="sub-box sub-box-skills">
                         <img src="assets/icons/java.png" title="Java" alt="Java">
@@ -334,7 +375,7 @@
                 </div>
                 <div class="box-project hidden">
                     <a href="https://github.com/KusalDemo/ranweil-tours.git">
-                        <img src="assets/images/ranweli-spice-garden-removebg-preview.png" alt="Project Ranweli" style="width: 100%; max-width: 200px;">
+                        <img src="https://cdn.vectorstock.com/i/500p/54/32/social-media-post-set-with-hiking-travel-offers-vector-50635432.avif" alt="Project Ranweli" style="width: 100%; max-width: 500px;">
                     </a>
                     <h3>Project Ranweli</h3>
                 </div>
@@ -345,11 +386,10 @@
                     <h3>Ranweli Layered</h3>
                 </div>
                 <div class="box-project hidden">
-                    <a href="https://github.com/KusalDemo/BookWormLibrary.git">
-
+                    <a href="https://github.com/KusalDemo/chat-application.git">
+                        <img src="https://cdn.vectorstock.com/i/preview-1x/99/76/live-chat-button-for-websites-and-application-vector-17759976.webp" alt="Chat Application" style="width: 100%; max-width: 500px;">
                     </a>
-
-                    <h3>Project</h3>
+                    <h3>Chat Application</h3>
                 </div>
             </div>
             <p>Welcome to the heart of my creative journey! This section showcases a curated selection of my projects,
