@@ -18,13 +18,18 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
+a{
+    .custom-cursor {
+        cursor: pointer;
+    }
+}
 body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
     background: url("assets/images/greek-wallpaper.jpg") fixed center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 .box>img:hover{
     transform: scale(1.30);
@@ -195,7 +200,6 @@ section {
     border-color: blue;
     margin-top: 20px;
 }
-
 @media (max-width: 1150px) {
     #targets > div {
         width: 100%;
@@ -204,9 +208,10 @@ section {
     nav{
         display: none;
     }
+    .marquee-container{
+        display: none;
+    }
 }
-
-
 /*Education Section*/
 #education{
     height: auto;
@@ -227,7 +232,6 @@ section {
     justify-items: center;
     border-radius: var(--boader-radius);
 }
-
 /*Skills*/
 #skills{
     height: auto;
@@ -268,7 +272,6 @@ section {
         height: auto;
     }
 }
-
 /*certificate section*/
 #certifications{
     height: auto;
@@ -279,7 +282,8 @@ section {
 }
 .box-container>h2{
     text-align: center;
-    padding-bottom: 15px;;
+    padding-bottom: 15px;
+    margin: 0 auto 20px auto;
 }
 .box-container-certificate{
     display: grid;
@@ -293,7 +297,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
 /*assignment section*/
 #assignments{
     height: auto;
@@ -429,7 +432,6 @@ section {
         transform: translateX(0);
     }
 }
-
 .hidden{
     opacity: 0;
     filter: blur(5px);
