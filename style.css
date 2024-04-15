@@ -13,8 +13,11 @@
     font-style: normal;
 }
 /*======================================================*/
-
 /*Common Styles*/
+*{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
 body {
     height: 100%;
     margin: 0;
@@ -48,7 +51,6 @@ section {
     overflow: hidden;
     width: 100%;
     z-index: 99;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     position: sticky;
@@ -105,7 +107,7 @@ section {
 /*Home Section*/
 .box-container-hero{
     position: relative;
-    top: 100px;
+    top: 50px;
     display: grid;
     gap: 15px;
 
@@ -125,8 +127,13 @@ section {
 }
 .box-hero>h1{
     font-style: var(--font-family-default);
-    font-family: "Poppins", sans-serif;
     font-size: 100px;
+    padding: 0;
+}
+.box-hero>p{
+    font-style: var(--font-family-default);
+    font-size: 15px;
+    padding:0 25%;
 }
 .box-hero>h1:hover{
     color: white;
@@ -157,56 +164,23 @@ section {
     width: 100%;
     height: auto;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     padding: 40px 0 40px 0;
 }
-
 #about-me {
     margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 15px;
     width: 80%;
-}
-
-.about-container-gallery-targets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-container-gallery-targets > div {
-    width: 60%;
-}
-
-@media (max-width: 1150px) {
-    .about-container-gallery-targets {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-container-gallery-targets > div {
-        width: 100%;
-        margin: 0 auto 20px auto;
-    }
-    #targets > img {
-        width: 80px;
-        height: 80px;
-    }
-    nav{
-        display: none;
-    }
+    text-align: center;
 }
 #targets {
+    width: 80%;
+    max-width: 600px;
     list-style-type: none;
+    margin: 0 auto 20px auto;
     padding: 10px;
-}
-#targets > img {
-    width: 100%;
-    height: auto;
 }
 #targets > button {
     width: 100%;
@@ -217,15 +191,22 @@ section {
     border-color: blue;
     margin-top: 20px;
 }
-.about-container > div {
-    margin-bottom: 20px;
+
+@media (max-width: 1150px) {
+    #targets > div {
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    nav{
+        display: none;
+    }
 }
+
 
 /*Education Section*/
 #education{
     height: auto;
     padding: 100px 9%;
-    font-family: "Poppins", sans-serif;
 
     text-align: center;
     justify-items: center;
@@ -247,8 +228,6 @@ section {
 #skills{
     height: auto;
     padding: 70px 9%;
-    font-family: "Poppins", sans-serif;
-
     text-align: center;
     justify-items: center;
 }
@@ -290,7 +269,6 @@ section {
 #certifications{
     height: auto;
     padding: 20px 9%;
-    font-family: "Poppins", sans-serif;
 
     text-align: center;
     justify-items: center;
@@ -316,7 +294,6 @@ section {
 #assignments{
     height: auto;
     padding: 70px 9%;
-    font-family: "Poppins", sans-serif;
 
     text-align: center;
     justify-items: center;
@@ -334,13 +311,15 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .box-container-assignments>div>a{
-    color: var(--primary-color);
+    color: #485460;
+}
+.box-container-assignments>div>a:hover{
+    color: black;
 }
 /*Project section*/
 #projects{
     height: auto;
     padding: 70px 9%;
-    font-family: "Poppins", sans-serif;
 
     text-align: center;
     justify-items: center;
@@ -361,7 +340,6 @@ section {
 #blog{
     height: auto;
     padding: 70px 9%;
-    font-family: "Poppins", sans-serif;
 
     text-align: center;
     justify-items: center;
@@ -394,19 +372,15 @@ section {
 /*Contact Section*/
 #contact{
     padding: 70px 9%;
-    font-family: "Poppins", sans-serif;
     justify-content: center;
     background: url("assets/images/greek-wallpaper.jpg");
     height: auto;
 }
-#contact>a:hover{
-    color: var(--secondary-color);
-}
+
 /* marquee effect */
 .marquee{
     display: inline-block;
     padding-left: 100%;
-    font-family: "Poppins", sans-serif;
     margin: 0;
 }
 .marquee-top{
