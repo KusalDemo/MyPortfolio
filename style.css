@@ -366,15 +366,16 @@ section {
     color: var(--secondary-color);
 }
 #blog>div>a:hover{
-    color: blue;
+    color: white;
 }
 
 /*Contact Section*/
 #contact{
     padding: 70px 9%;
-    justify-content: center;
     background: url("assets/images/greek-wallpaper.jpg");
     height: auto;
+
+    text-align: center;
 }
 
 /* marquee effect */
