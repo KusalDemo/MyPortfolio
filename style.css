@@ -30,6 +30,11 @@ body {
     flex-direction: column;
     background: url("assets/images/greek-wallpaper.jpg") fixed center no-repeat;
     backdrop-filter: blur(3px);
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .box>img:hover{
     transform: scale(1.30);
@@ -536,6 +541,7 @@ input:nth-of-type(5):checked ~ main#carousel {
         transform: translateX(0);
     }
 }
+/*left to right*/
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -547,5 +553,15 @@ input:nth-of-type(5):checked ~ main#carousel {
     filter: blur(0);
     transform: translateX(0);
 }
-
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 

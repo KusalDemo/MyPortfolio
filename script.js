@@ -20,3 +20,8 @@ function toggleMobileMenu() {
         x.className = "navigation";
     }
 }
+
+// Disable right-click context menu
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
