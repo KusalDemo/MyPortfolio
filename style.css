@@ -23,6 +23,9 @@ a{
         cursor: pointer;
     }
 }
+ul{
+    list-style-type: none;
+}
 body {
     height: 100%;
     margin: 0;
