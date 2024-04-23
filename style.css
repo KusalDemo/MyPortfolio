@@ -12,11 +12,27 @@
     font-weight: 500;
     font-style: normal;
 }
+.box:hover{
+    background: linear-gradient(to bottom right, white, #ccae62);
+    background-size: 200% 200%;
+    transition: background-color 0.3s ease;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
 /*======================================================*/
 /*Common Styles*/
 *{
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+
 }
 a{
     .custom-cursor {
@@ -32,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     background: url("assets/images/greek-wallpaper.jpg") fixed center no-repeat;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(7px);
 
     user-select: none;
     -webkit-user-select: none;
