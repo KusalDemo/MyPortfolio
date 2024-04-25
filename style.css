@@ -37,7 +37,7 @@
 *{
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
-
+    /*overflow-x: hidden;*/
 }
 a{
     .custom-cursor {
@@ -487,6 +487,16 @@ input:nth-of-type(5):checked ~ main#carousel {
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.assignment-btn{
+    font-size: 18px;
+    border: 1px solid #ccae62;
+    border-radius: 15px;
+    background-color: transparent;
+    padding: 7px;
+}
+.assignment-btn:hover{
+    background-color: #ccae62;
+}
 /*blogs section*/
 #blog{
     height: auto;
@@ -529,7 +539,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     text-align: center;
 }
 .fa-brands , .fa-regular{
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     color: black;
 }
@@ -539,11 +549,14 @@ input:nth-of-type(5):checked ~ main#carousel {
 #contact h1{
     font-size: 50px;
 }
-.fa-regular:hover{
+.fa:hover{
     color: white;
     text-shadow: 0 0 0 10px white;
 }
 /* marquee effect */
+.marquee-container{
+    overflow-x: hidden;
+}
 .marquee{
     display: inline-block;
     padding-left: 100%;
@@ -647,6 +660,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     position: absolute;
     width: 32px;
     height: 32px;
+    color: #ccae62;
     background: currentColor;
     animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
