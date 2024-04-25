@@ -25,3 +25,11 @@ function toggleMobileMenu() {
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Hide loading screen
+    document.querySelector('.loading-screen').style.display = 'none';
+    // Show content
+    document.getElementById('content').style.display = 'block';
+});
