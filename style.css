@@ -16,8 +16,13 @@
     background: linear-gradient(to bottom right, white, #ccae62);
     background-size: 200% 200%;
     transition: background-color 0.3s ease;
-    animation: gradientAnimation 3s infinite alternate;
+    animation: gradientAnimation 2s infinite alternate;
 }
+/*.box:hover{
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    !*transform: rotateY(180deg);*!
+}*/
 
 @keyframes gradientAnimation {
     0% {
@@ -157,6 +162,7 @@ section {
 .box-hero>div:hover{
     box-shadow: 0 0 0 20px var(--primary-color);
 }
+
 .box-hero>h1{
     font-style: var(--font-family-default);
     font-size: 100px;
@@ -164,7 +170,7 @@ section {
 }
 .box-hero>p{
     font-style: var(--font-family-default);
-    font-size: 15px;
+    font-size: 18px;
     padding:0 25%;
 }
 .box-hero>h1:hover{
@@ -198,8 +204,8 @@ section {
 #about {
     width: 100%;
     height: auto;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     font-style: normal;
     padding: 40px 0 40px 0;
 }
@@ -219,12 +225,18 @@ section {
 }
 #targets > button {
     width: 100%;
-    height: 35px;
-    background-color: blue;
+    height: 40px;
+    background-color: #378CE7;
     color: white;
+    font-size: 15px;
     border-radius: 15px;
-    border-color: blue;
+    border-color:#378CE7;
     margin-top: 20px;
+}
+#targets > button:hover{
+    cursor: pointer;
+    background-color:#5356FF;
+    border-color:#5356FF;
 }
 @media (max-width: 1150px) {
     #targets > div {
@@ -388,6 +400,10 @@ input:nth-of-type(5):checked ~ main#carousel {
     width: 100px;
     height: auto;
 }
+.sub-box-skills:hover{
+    transition: transform 0.5s ease-in;
+    transform: rotateY(180deg);
+}
 @media screen and (max-width: 1560px){
     .box-skills {
         display: grid;
@@ -507,7 +523,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 /*Contact Section*/
 #contact{
     padding: 70px 9%;
-    background: url("assets/images/greek-wallpaper.jpg");
+    background: url("assets/images/greek-wallpaper.jpg") top;
     height: auto;
 
     text-align: center;
@@ -518,6 +534,16 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 #social-logos>a:hover{
     color: white;
+}
+#contact h1{
+    font-size: 50px;
+}
+.fa-brands , .fa-regular{
+    font-size: 40px;
+}
+.fa-regular:hover{
+    color: white;
+    text-shadow: 0 0 0 10px white;
 }
 
 /* marquee effect */
