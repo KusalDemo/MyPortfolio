@@ -200,14 +200,15 @@ section {
         display: none;
     }
 }
+
 /* About Me Section Styles */
 #about {
     width: 100%;
     height: auto;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     font-style: normal;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 40px ;
 }
 #about-me {
     margin: 0 auto 20px auto;
@@ -496,6 +497,10 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 .assignment-btn:hover{
     background-color: #ccae62;
+}
+#projects-desc,#assignments-desc{
+    font-size: 20px;
+    font-weight: 500;
 }
 /*blogs section*/
 #blog{
