@@ -1,12 +1,14 @@
-
 const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('show');
         }else{
             entry.target.classList.remove('show');
         }
+        /*Character message*/
+        const message = $(entry.target).data('message');
+        console.log(entry.target);
+        $('#dynamic-message').text(message);
     })
 })
 const hiddenElements = document.querySelectorAll('.hidden');
@@ -20,16 +22,17 @@ function toggleMobileMenu() {
         x.className = "navigation";
     }
 }
-
 // Disable right-click context menu
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
 
+// Typed animation
+var typed = new Typed('#about-me-typed', {
+    strings: ['Full Stack Developer', '&amp; Software Engineer', '&amp; Programmer','&amp; Web Developer','&amp; Welcome To My Portfolio'],
+    typeSpeed: 100,
+    backSpeed: 100,});
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Hide loading screen
-    document.querySelector('.loading-screen').style.display = 'none';
-    // Show content
-    document.getElementById('content').style.display = 'block';
-});
+
+
+

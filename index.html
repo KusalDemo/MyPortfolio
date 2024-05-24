@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kusal Gunasekara's portfolio">
+    <meta name="description" content="Welcome to Kusal Gunasekara's portfolio As an undergraduate student at IJSE and a passionate Full Stack Developer & Software Engineer,
+    I am dedicated to creating innovative solutions. With a strong foundation in both front-end and back-end development, I am eager to take on new software projects.
+    Visit my portfolio to explore my work and learn more about my capabilities.">
     <meta name="keywords" content="Kusal Gunasekara software engineer fullstack developer">
     <meta name="author" content="Kusal Gunasekara">
-    <title>KusalJS</title>
+    <title>Kusal Gunasekara</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="assets/icons/icons8-king-favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="loading-screen">
-        <div class="lds-heart"><div></div></div>
+<div id="message-div" data-aos="fade-up">
+    <img src="assets/images/frag-charactor-removebg-preview.png">
+    <div id="message-content-div">
+        <span id="dynamic-message"></span>
     </div>
-    <div id="content" style="display:none;">
+</div>
+    <div id="content">
         <div class="navigation" id="navigation-bar">
             <a href="#home" class="active">KusalJS</a>
             <a href="#about">about</a>
@@ -38,10 +45,11 @@
                     <div></div>
                 </div>
                 <div class="box-hero">
-                    <h1>KUSAL GUNASEKARA</h1>
+                    <h1 class="animate__animated animate__fadeInUp">KUSAL GUNASEKARA</h1>
                     <h3 id="kusal-short">KusalJS</h3>
                     <p id="home-hero-caption">An ambitious undergraduate at IJSE, 🎯 is on a compelling journey of learning and growth
                         within the software engineering landscape.Aspiring to become a versatile and skillful software engineer.</p>
+                    <!--<span id="about-me-typed"></span>-->
                 </div>
             </div>
         </section>
@@ -50,11 +58,11 @@
             <div class="marquee marquee-top">KUSAL_GUNASEKARA✨️KUSAL_GUNASEKARA</div>
         </div>
         <div class="marquee-container">
-            <div class="marquee marquee-bottom">FullStack_Developer_from_🇱🇰️Srilanka_</div>
+            <div class="marquee marquee-bottom">FullStack_Developer_from_️Srilanka_</div>
         </div>
         <section id="about">
             <div class="about-container">
-                <div id="about-me" class="hidden">
+                <div id="about-me" class="hidden" data-message="Kusal_is 👨‍💻 currently_learning about_networking_& webdevelopment.">
                     <h2>About me</h2>
                     <p>
                         Hey, I'm Kusal Gunasekara,An ambitious undergraduate at IJSE, and I'm from Kandy, Sri Lanka. Right now,
@@ -104,7 +112,7 @@
             <img src="assets/icons/icons8-education-100.png" title="Education" alt="Education">
             <h2>Education</h2>
             <div class="box-container-education">
-                <div class="box box-education hidden gradient-bg">
+                <div class="box box-education hidden gradient-bg" data-message="He is eager to learn about fullstack development. 📈">
                     <div id="scbck">
                         <div class="grid-container logo-and-details">
                             <div class="grid-item">
@@ -112,7 +120,7 @@
                             </div>
                             <div class="grid-item">
                                 <h4>Chandananda College Kandy</h4>
-                                <p>2020-2024</p>
+                                <p>2007-2018</p>
                                 <p>🤝 Activities and Societies :</p>
                                 <ul>
                                     <li> Senior prefect (2017 -2019)</li>
@@ -162,7 +170,7 @@
         <section id="skills">
             <img src="assets/icons/icons8-skills-100.png" title="Skills" alt="Skills">
             <h2>Skills</h2>
-            <div class="box-container box-container-skills hidden">
+            <div class="box-container box-container-skills hidden" data-message="Problem solving, teamwork,communication, leadership,creativity and more..💪 lets join with kusal_💯">
                 <div class="box box-skills">
                     <div class="sub-box sub-box-skills">
                         <img src="assets/icons/java.png" title="Java" alt="Java" loading="lazy">
@@ -229,7 +237,7 @@
             <img src="assets/icons/icons8-certificate-100.png" title="certificate" alt="certificate">
             <h2>Certificates</h2>
             <div class="box-container-certificate">
-                <div class="box hidden">
+                <div class="box hidden" data-message="He is open for projects.Search_'KusalDemo' in github_& view his works 💻">
                         <img src="assets/certificates/UOM-Python-introduction.jpeg" alt="Certification logo 1" loading="lazy" style="width: 100%; max-width: 300px;">
                         <p>Issued Jan 2024</p>
                         <p>Credential ID sWiqLUBYPG</p>
@@ -275,7 +283,7 @@
             <img src="assets/icons/icons8-course-assign-100.png" title="assignments" alt="assignments">
             <h2>Assignments</h2>
             <div class="box-container box-container-assignments">
-                <div class="box box-assignments hidden">
+                <div class="box box-assignments hidden" data-message="You can view assignments & projects he has done.⚓">
                     <h3>Assignment No.01</h3><hr><br>
                     <a href="https://drive.google.com/file/d/1nF--mx1QsbYe0lsSCzUxhs4Ykb2X6eCm/view" ><button class="assignment-btn">View</button></a>&nbsp;
                 </div>
@@ -336,7 +344,7 @@
             <img src="assets/icons/icons8-coding-100.png" title="Projects" alt="Projects">
             <h2>Projects</h2>
             <div class="box-container box-container-projects">
-                <div class="box box-project hidden">
+                <div class="box box-project hidden" data-message="Contact_Kusal.Drop a message_from message section.📢look right bottom.">
                     <a href="https://github.com/KusalDemo/BookWormLibrary.git">
                         <img src="https://cdn.vectorstock.com/i/500p/68/46/library-management-yellow-word-concept-vector-50936846.jpg" alt="Project Ranweli" loading="lazy" style="width: 100%; max-width: 500px;">
                     </a>
@@ -380,7 +388,7 @@
             <img src="assets/icons/icons8-writing-100.png" title="Blogs" alt="Blogs">
             <h2>Blogs</h2>
             <div class="box-container box-container-blogs">
-                <div class="box box-blogs hidden">
+                <div class="box box-blogs hidden" data-message="Reading_is a great way to learn.Read_kusal's blogs..📖">
                     <h2>Unraveling the Threads of Java</h2>
                     <a href="https://medium.com/@kusalgunasekara2002/unraveling-the-threads-of-java-a-journey-through-its-past-present-and-future-f03a0b0dfbd9">Read The article</a><br>
                     <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
@@ -400,11 +408,16 @@
                 <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
             </div>
         </section>
+            <section id="findMe">
+                <img src="assets/icons/icons8-location-100.png" title="My Location" alt="my location" style="margin: 0 120px">
+                <h1>Find Me</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.1300283134485!2d80.64730669944734!3d7.338209294868417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae367f590e3890d%3A0xd9421b7fd9429a2f!2sUda%20Thalawinna%20Railway%20Station!5e0!3m2!1sen!2slk!4v1716521230520!5m2!1sen!2slk" width="600" height="450" style="border:0; border-radius: 15px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
         <section id="contact">
             <div>
                 <h1>🦇️</h1>
                 <span>Kusal Gunasekara</span>
-                <h1>Empowering innovation and creativity, one line of code at a time. Together, let's build a bright. digital future.</h1>
+                <h1 class="hidden" data-message="Connect_with Kusal on social media_&stay up-to-date 🔗❤️">Empowering innovation and creativity, one line of code at a time. Together, let's build a bright. digital future.</h1>
                 <p> © kusalJS/2024</p><br>
                 <h4>Contact Me</h4>
                 <div id="social-logos">
@@ -424,7 +437,14 @@
         </section>
     </main>
     </div>
-    <script src="script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="script.js"></script>
     <script src="https://kit.fontawesome.com/1eef1792c9.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -437,5 +457,6 @@
             s0.parentNode.insertBefore(s1,s0);
         })();
     </script>
+
 </body>
 </html>
