@@ -46,7 +46,10 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: url("assets/images/greek-wallpaper.jpg") fixed center no-repeat;
+    /*background: url("assets/images/greek-wallpaper.jpg") fixed center no-repeat;*/
+    background: url("assets/images/bg.gif") fixed center no-repeat;
+    background-size: cover;
+    /*background-color: #ced6e0;*/
     backdrop-filter: blur(7px);
 
     user-select: none;
@@ -166,9 +169,8 @@ section {
 #about-me {
     margin: 0 auto 20px auto;
     padding: 20px;
-    border-radius: 15px;
+   /* border-radius: 15px;*/
     width: 80%;
-    text-align: center;
 }
 #targets {
     width: 80%;
@@ -566,12 +568,13 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 #message-content-div{
     width: 100%;
-    height: 40%;
-    background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    height: 50%;
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     left: -50px;
-    padding: 0 5px;
+    padding: 5px 5px;
     border-radius: 15px;
 }
 /*=============================Media Queries=============================*/
@@ -627,8 +630,9 @@ input:nth-of-type(5):checked ~ main#carousel {
         width: 300px;
         height: 200px;
     }
-}
-@media screen and (max-width: 600px) {
+    #message-div{
+        top: 80vh;
+    }
     #message-div>img{
         width: 150px;
         height: 170px;
@@ -638,6 +642,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         left: -30px;
         font-size: 10px;
     }
+}
+@media screen and (max-width: 600px) {
     #home > div > h1 {
         font-size: 4rem;
     }
@@ -650,5 +656,9 @@ input:nth-of-type(5):checked ~ main#carousel {
     }
     #home-hero-caption{
         display: none;
+    }
+    #projects-desc,#assignments-desc{
+        font-size: 15px;
+        font-weight: 400;
     }
 }
