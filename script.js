@@ -27,11 +27,6 @@ document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
 
-// Typed animation
-var typed = new Typed('#about-me-typed', {
-    strings: ['Full Stack Developer', '&amp; Software Engineer', '&amp; Programmer','&amp; Web Developer','&amp; Welcome To My Portfolio'],
-    typeSpeed: 100,
-    backSpeed: 100,});
 
 
 

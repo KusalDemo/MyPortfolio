@@ -4,6 +4,7 @@
     --darkgray-color: #333;
     --lightgray-color: #f0f0f0;
     --dark-box-color: #212124;
+    --golden-color: #ccae62;
     --font-family-default: "Poppins", sans-serif;
     --boader-radius:15px;
 }
@@ -20,10 +21,10 @@
     font-style: normal;
 }
 .box:hover{
-    background: linear-gradient(to bottom right, white, #ccae62);
+    background: linear-gradient(to bottom right, white, var(--golden-color));
     background-size: 200% 200%;
     transition: background-color 0.3s ease;
-    animation: gradientAnimation 2s infinite alternate;
+    animation: gradientAnimation 1s infinite alternate;
 }
 @keyframes gradientAnimation {
     0% {
@@ -98,8 +99,10 @@ section {
     font-size: 17px;
 }
 .navigation a:hover {
-    background-color: #ddd;
+    /*background-color: #ddd;*/
     color: gray;
+    text-decoration: underline var(--golden-color);
+    /*border-bottom: 2px solid #ccae62;*/
 }
 .navigation a.active {
     background-color: black;
@@ -161,23 +164,27 @@ section {
 #about {
     width: 100%;
     height: auto;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 17px;
+    /*font-weight: 600;*/
     font-style: normal;
     padding: 40px 0 40px ;
 }
 #about-me {
     margin: 0 auto 20px auto;
-    padding: 20px;
-   /* border-radius: 15px;*/
+    padding: 10px 30px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
     width: 80%;
+
 }
 #targets {
     width: 80%;
+    background-color: #f0f0f0;
+    border-radius: 15px;
     max-width: 600px;
     list-style-type: none;
     margin: 0 auto 20px auto;
-    padding: 10px;
+    padding: 10px 30px;
 }
 #targets > button {
     width: 100%;
@@ -422,13 +429,13 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 .assignment-btn{
     font-size: 18px;
-    border: 1px solid #ccae62;
+    border: 1px solid var(--golden-color);
     border-radius: 15px;
     background-color: transparent;
     padding: 7px;
 }
 .assignment-btn:hover{
-    background-color: #ccae62;
+    background-color:var(--golden-color);
 }
 #projects-desc,#assignments-desc{
     font-size: 20px;
@@ -479,7 +486,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     text-decoration: none;
     color: black;
 }
-#social-logos>a:hover{
+#social-logos,.box-hero >a:hover{
     color: white;
 }
 #contact h1{
@@ -601,6 +608,9 @@ input:nth-of-type(5):checked ~ main#carousel {
     .marquee-container{
         display: none;
     }
+    #home-hero-caption{
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
     .navigation a:not(:first-child) {display: none;}
@@ -653,9 +663,6 @@ input:nth-of-type(5):checked ~ main#carousel {
     #home > div > img {
         width: 70px;
         height: 70px;
-    }
-    #home-hero-caption{
-        display: none;
     }
     #projects-desc,#assignments-desc{
         font-size: 15px;

@@ -18,12 +18,12 @@
     <link rel="icon" href="assets/icons/icons8-king-favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div id="message-div" data-aos="fade-up">
+<!--<div id="message-div" data-aos="fade-up">
     <img src="assets/images/frag-charactor-removebg-preview.png">
     <div id="message-content-div">
         <span id="dynamic-message"></span>
     </div>
-</div>
+</div>-->
     <div id="content">
         <div class="navigation" id="navigation-bar">
             <a href="#home" class="active">KusalJS</a>
@@ -45,11 +45,15 @@
                     <div></div>
                 </div>
                 <div class="box-hero">
-                    <h1 class="animate__animated animate__fadeInUp">KUSAL GUNASEKARA</h1>
+                    <h1 class="animate__animated animate__fadeInUp" style="margin: 0">KUSAL GUNASEKARA</h1>
                     <h3 id="kusal-short">KusalJS</h3>
-                    <p id="home-hero-caption">An ambitious undergraduate at IJSE, 🎯 is on a compelling journey of learning and growth
-                        within the software engineering landscape.Aspiring to become a versatile and skillful software engineer.</p>
-                    <!--<span id="about-me-typed"></span>-->
+                        <a href="https://github.com/KusalDemo" class="fa-brands fa-github"></a>&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/kusal-gunasekara-337507234" class="fa-brands fa-linkedin"></a>&nbsp;&nbsp;
+                        <a href="https://www.facebook.com/kusal.gunasekara.3" class="fa-brands fa-facebook"></a>&nbsp;&nbsp;
+                        <a href="https://codepen.io/SOLUTION-KJS" class="fa-brands fa-codepen "></a>&nbsp;&nbsp;
+                        <a href="https://medium.com/@kusalgunasekara2002" class="fa-brands fa-medium "></a><br>
+                    <!--<p id="home-hero-caption" style="font-size: 16px">An ambitious undergraduate at IJSE, 🎯 is on a compelling journey of learning and growth
+                        within the software engineering landscape.Aspiring to become a versatile and skillful software engineer.</p>-->
                 </div>
             </div>
         </section>
@@ -62,8 +66,8 @@
         </div>
         <section id="about">
             <div class="about-container">
-                <div id="about-me" class="hidden" data-message="Kusal_is 👨‍💻 currently_learning about_networking_& webdevelopment.">
-                    <h2>About me</h2>
+                <div id="about-me" class="hidden box" data-message="Kusal_is 👨‍💻 currently_learning about_networking_& webdevelopment.">
+                    <h2><i class="fa-regular fa-chess-king"></i> About me</h2>
                     <p>
                         Hey, I'm Kusal Gunasekara,An ambitious undergraduate at IJSE, and I'm from Kandy, Sri Lanka. Right now,
                         I'm studying software engineering, web development, and UI/UX design.
@@ -79,22 +83,26 @@
                         <li>Email   : kusalgunasekara2002@gmail.com</li>
                     </ul>
                 </div>
-                    <div id="targets" class="hidden">
+                    <div id="targets" class="box hidden gradient-bg">
                         <h3>Targets</h3>
                         <li>📚 Continuous Learning and Skill Development</li>
                         <li>💻 Mastery of Core Technical Skills</li>
                         <li>🎯 Specialization and Expertise</li>
                         <li>🌟 Contribution to Meaningful Projects</li>
                         <li>📈 Professional Growth and Advancement</li>
-                        <li>🤝 Contributions to the Software Engineering Community</li>
+                        <li>🤝 Contributions to the Software Engineering Community</li><br>
+                        <h3>Services</h3>
+                        <li>📚 Web Development</li>
+                        <li>💻 UI/UX Design</li>
+                        <li>🎯 App Development</li><br>
                         <button id="download-cv" type="button">
                             <i class="fa-solid fa-download" style="color: #ffffff;"></i>
                             Download CV</button>
                     </div>
                 <div id="gallery" class="hidden">
-                    <input type="radio" name="position" checked />
                     <input type="radio" name="position" />
                     <input type="radio" name="position" />
+                    <input type="radio" name="position" checked/>
                     <input type="radio" name="position" />
                     <input type="radio" name="position" />
                     <main id="carousel">
@@ -329,6 +337,12 @@
                     <a href="https://kusaldemo.github.io/InternetTechnologies-Assignment06/"><button class="assignment-btn">View</button></a>
 
                 </div>
+                <div class="box box-assignments hidden">
+                    <h3>Assignment No.12</h3><hr><br>
+                    <a href="https://github.com/KusalDemo/InternetTechnologies-Assignment06/tree/mvc-impl"><button class="assignment-btn">GitHub</button></a>&nbsp;
+                    <a href="https://kusaldemo.github.io/InternetTechnologies-Assignment06/"><button class="assignment-btn">View</button></a>
+
+                </div>
             </div>
             <p id="assignments-desc">NB: <em>Feel free to explore the assignments by clicking on their respective numbers</em></p>
         </section>
@@ -382,16 +396,17 @@
             <div class="box-container box-container-blogs">
                 <div class="box box-blogs hidden" data-message="Reading_is a great way to learn.Read_kusal's blogs..📖">
                     <h2>Unraveling the Threads of Java</h2>
-                    <a href="https://medium.com/@kusalgunasekara2002/unraveling-the-threads-of-java-a-journey-through-its-past-present-and-future-f03a0b0dfbd9">Read The article</a><br>
+                    <a href="https://medium.com/@kusalgunasekara2002/unraveling-the-threads-of-java-a-journey-through-its-past-present-and-future-f03a0b0dfbd9"><button class="assignment-btn">Read The article</button></a><br>
                     <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
                 </div>
                 <div class="box box-blogs hidden">
                     <h2>Understanding Java Socket Programming</h2>
+                    <a href="https://medium.com/@kusalgunasekara2002/understanding-java-socket-programming-046a7c622d42"><button class="assignment-btn">Read The article</button></a><br>
                     <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
                 </div>
                 <div class="box box-blogs hidden">
                     <h2>Through Its Past, Present, and Future</h2>
-                    <a href="https://medium.com/@kusalgunasekara2002/unraveling-the-threads-of-java-a-journey-through-its-past-present-and-future-f03a0b0dfbd9">Read The article</a><br>
+                    <a href="https://medium.com/@kusalgunasekara2002/unraveling-the-threads-of-java-a-journey-through-its-past-present-and-future-f03a0b0dfbd9"><button class="assignment-btn">Read The article</button></a><br>
                     <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
                 </div>
             </div><br>
@@ -400,14 +415,14 @@
                 <img src="assets/icons/icons8-medium-50.png"  title="Medium" alt="Medium">
             </div>
         </section>
-            <section id="findMe">
+           <!-- <section id="findMe">
                 <img src="assets/icons/icons8-location-100.png" title="My Location" alt="my location" style="margin: 0 120px">
                 <h1>Find Me</h1>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.1300283134485!2d80.64730669944734!3d7.338209294868417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae367f590e3890d%3A0xd9421b7fd9429a2f!2sUda%20Thalawinna%20Railway%20Station!5e0!3m2!1sen!2slk!4v1716521230520!5m2!1sen!2slk" width="600" height="450" style="border:0; border-radius: 15px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+            </section>-->
         <section id="contact">
             <div>
-                <h1>🦇️</h1>
+                <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"><br>
                 <span>Kusal Gunasekara</span>
                 <h1 class="hidden" data-message="Connect_with Kusal on social media_&stay up-to-date 🔗❤️">Empowering innovation and creativity, one line of code at a time. Together, let's build a bright. digital future.</h1>
                 <p> © kusalJS/2024</p><br>
